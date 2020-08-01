@@ -14,8 +14,8 @@ jobs:
     - name: Send Message in Telegram
       uses: appleboy/telegram-action@master
       with:
-        to: -1001488016153
-        token: 1292775840:AAE4dwneT6Nr6x4C-07feYgFiMjpms18DFU
+        to: ${{ secrets.MESSAGEID }}
+        token: ${{ secrets.BOTTOKEN }}
         message: |
           Project: GitDemo
           Commit Message: ${{ github.event.head_commit.message }}
