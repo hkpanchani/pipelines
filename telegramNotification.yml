@@ -17,5 +17,6 @@ jobs:
         to: -1001488016153
         token: 1292775840:AAE4dwneT6Nr6x4C-07feYgFiMjpms18DFU
         message: |
-          This is the demo message sent from gitdemo repository
-          from Hiren Panchani
+          Project: GitDemo
+          Commit Message: ${{ github.event.head_commit.message }}
+          Commited Actor: ${{ github.actor }}
